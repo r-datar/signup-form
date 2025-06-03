@@ -1,12 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Signup form</title>
-</head>
-<body>
-    
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Signup form</title>
+    </head>
+    <body>
+        <div class="page">
+        <div class="space">&nbsp;</div>
+        <div class="content">
+            <div class="left-image">
+                <div class="card-body">
+                
+                        <img src="odin-lined.png" width="60px" height="80px" class="logo">
+                        <div class="logo-text">ODIN</div>
+                
+                </div>    
+            </div>
+            <div class="main">
+                <div class="heading">
+                    Hey there! We're excited to have you here. <br>
+                    It only takes a few seconds! <br>
+                    Join Us Today!<p>
+                        You know you want to...
+                </div>
+                <div class="form">
+                    <form action="#" method="post">
+                    <table>
+                        <tr>
+                            <td colspan="2"><h2>Let's do this!</h2></td>
+                        </tr>
+                        <tr>
+                            <td><label for="firstname">FIRST NAME</label><br>
+                            <input type="text" name="firstname" minlength="1" maxlength="25" pattern="[a-z]{1,25}"
+                            title="Please enter only letters between 1 to 25 characters in length"></td>
+                                <td><label for="lastname">LAST NAME</label><br>
+                                <input type="text" name="lastname" minlength="1" maxlength="25" pattern="[a-z]{1,25}"
+                                title="Please enter only letters between 1 to 25 characters in length"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">EMAIL</label><br>
+                            <input type="email" name="email" title="Please enter a valid email address" required>
+
+                            </td>
+
+
+                                <td><label for="phone">PHONE NUMBER</label><br>
+                                <input type="text" name="phone" 
+                                pattern="(\d{10})" title="Please enter a valid phone number, example: 1234567890" placeholder="xxxxxxxxxx"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">PASSWORD</label><br>
+                            <input type="password" name="password" required></td>
+                                <td><label for="confirm-passowrd">CONFIRM PASSWORD</label><br>
+                                <input type="password" name="password" required></td>
+                        </tr>
+                    </table>
+                    <div class="submit">
+                        <button type="submit">Create Account</button>
+                    </div>
+                    <div class="already-member">
+                        Already have an account? <a href="">Login</a>
+                    </div>
+                    </form>
+                </div>    
+            </div>
+            
+    </div> 
+    <div class="space">&nbsp;</div> 
+    </div>
+    </body>
+    </html>

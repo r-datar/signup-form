@@ -1,3 +1,133 @@
-.body{
-    font-size: medium;
+@font-face {
+    font-family: odin-logo;
+    src: url(Norse-Bold.otf);
 }
+
+.body{
+    font-size: small;
+    height:100vh;
+    box-sizing: border-box;
+}
+
+.page {
+    display:flex;
+    flex-direction: row;
+    width: 100vw;
+    align-self: center;
+}
+.space {
+    display: flex;
+    width: 20vw;
+    background-color: black;
+}
+.content {
+    display:flex;
+    flex-direction: row;
+    width: 60vw;
+    gap: 0;
+    margin: 0;
+    align-self: center;
+
+}
+
+.left-image {
+    display: flex;
+    position: relative;
+    width: 30vw;
+    height: 100vh;
+    background-image: url(IMG_left.jpg);
+    background-size: cover;
+
+    /* fallback if image cannot be loaded */
+    background-color: #f0f0f0;
+
+     /* border: 3px dashed  */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 7rem;
+
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  background: black;
+  opacity: 0.3; 
+}
+
+.logo-text {
+  color: white;
+  font-size: 4em;
+  font-family: odin-logo;
+  
+}
+
+.content .main {
+    display: flex;
+    /* align-items: center;  */
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+
+    width: 50vw;
+    background-color: goldenrod;
+    opacity: 0.7;
+    color: #fff;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* border: 3px dotted; */
+    
+}
+
+.heading {
+    /* border: 3px dotted;  */
+    padding-left: 10px;
+}
+
+table {
+    border-spacing: 0 15px;
+    width: 100%;
+    background-color: rgb(186,146,45);
+    padding-left: 10px;
+    box-shadow: inset 0 0 5px #fcdfff;
+
+}
+
+table label {
+    font-size: x-small;
+}
+
+.submit {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+button {
+    background-color: olive;
+    border-radius: 8%;
+}
+
+.already-member {
+    font-size: x-small;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+input {
+      border: 1px solid gray;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:focus {
+    border: 2px solid blue;
+    box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07); 
+
+}
+
